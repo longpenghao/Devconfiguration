@@ -8,6 +8,7 @@ git config --global user.email "jeremyhua@foxmail.com"
 #clash 代理
 git config --global http.proxy "socks5://127.0.0.1:7890"
 git config --global http.proxy "socks5://127.0.0.1:7890"
+ssh-keygen -t rsa -C "jeremyhua@foxmail.com"
 ```
 
 ## git提交规范
