@@ -33,3 +33,9 @@ sudo apt-get install open-vm-tools-desktop -y
     * `wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -`
     * `sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'`
     * `sudo apt update && sudo apt install google-chrome-stable`
+ 
+
+
+* 卸载java-8
+   * `sudo apt-get remove openjdk-8-jre-headless `
+   * `sudo apt-get remove openjdk-8-jdk`
