@@ -18,6 +18,7 @@ sudo apt-get install open-vm-tools-desktop -y
     * `chsh -s /bin/zsh`
     * `sudo reboot`
     * `sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+    * `git clone https://gitee.com/mirrors/oh-my-zsh.git  ~/.oh-my-zsh` `cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc`
 * 配置.vimrc
 * 安装jdk8[link](https://blog.csdn.net/zbj18314469395/article/details/86064849)
     * `sudo apt-get install openjdk-8-jdk -y`
