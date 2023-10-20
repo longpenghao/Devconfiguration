@@ -1,0 +1,4 @@
+chmod 644 authorized_keys
+
+echo xfce4-session > ~/.xsession
+sudo usermod -G sudo
