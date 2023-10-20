@@ -8,7 +8,7 @@ sudo apt install vim
 sudo apt-get install curl -y
 sudo apt-get install git -y
 sudo apt-get install net-tools -y
-sudo apt-get install open-vm-tools-desktop -y
+# sudo apt-get install open-vm-tools-desktop -y
 ```
 
 * 配置on-my-zsh
