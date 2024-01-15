@@ -3,12 +3,12 @@
 ## git配置
 
 ```
-git config --global user.name "Hua Zhangzhao"
-git config --global user.email "jeremyhua@foxmail.com"
+git config --global user.name "Hao Lonpeng"
+git config --global user.email "3518563454@qq.com"
 #clash 代理
 git config --global http.proxy "socks5://127.0.0.1:7890"
 git config --global http.proxy "socks5://127.0.0.1:7890"
-ssh-keygen -t rsa -C "jeremyhua@foxmail.com"
+ssh-keygen -t rsa -C "3518563454@qq.com"
 ```
 
 ## git提交规范
