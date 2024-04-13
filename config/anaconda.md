@@ -1,11 +1,8 @@
 # Anacoda
 
-'''
+```
 # linux中anaconda的配置文件
 # 保证“conda activate 虚拟环境名称”命令可以正常运行
-
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
-export PATH=/usr/local/cuda/bin:$PATH
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -21,4 +18,10 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-'''
+```
+
+```
+# cuda的配置文件
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
+export PATH=/usr/local/cuda/bin:$PATH
+```
