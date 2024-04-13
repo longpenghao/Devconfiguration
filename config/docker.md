@@ -1,11 +1,5 @@
 # docker
 
-## docker image
-
-## docker container
-
-## docker upload
-
 1. 容器上传docker hub
 
 ```
@@ -26,10 +20,14 @@ docker push jeremyhua1931/f2md:v1
 ## docker install
 
 ```
+# 参考链接：https://yeasy.gitbook.io/docker_practice/install/ubuntu
+
+# 卸载旧版本docker
 sudo apt-get remove docker \
                docker-engine \
                docker.io
-      
+
+# 使用apt安装docker
  sudo apt-get update
 
  sudo apt-get install \
@@ -38,49 +36,55 @@ sudo apt-get remove docker \
     curl \
     gnupg \
     lsb-release
-  
+
+# 建议使用国内源安装
+# 国内源
 $ curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
-
-
 # 官方源
 # $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 
-
+# 想sources.list中添加Docker软件源
 $ echo \
   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://mirrors.aliyun.com/docker-ce/linux/ubuntu \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-
-
 # 官方源
 # $ echo \
 #   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
 #   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
+# 更新 apt 软件包缓存，并安装 docker-ce
+sudo apt-get update
 
-
-$ sudo apt-get update
-
-$ sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
 
 ```
-# $ curl -fsSL test.docker.com -o get-docker.sh
-$ curl -fsSL get.docker.com -o get-docker.sh
-$ sudo sh get-docker.sh --mirror Aliyun
+# 使用脚本自动安装Docker
+curl -fsSL get.docker.com -o get-docker.sh
+sudo sh get-docker.sh --mirror Aliyun
 # $ sudo sh get-docker.sh --mirror AzureChinaCloud
+
+# 若想安装测试版的 Docker, 请从 test.docker.com 获取脚本
+# $ curl -fsSL test.docker.com -o get-docker.sh
 ```
 
 ```
-$ sudo systemctl enable docker
-$ sudo systemctl start docker
+# 启动 Docker
+sudo systemctl enable docker
+sudo systemctl start docker
 ```
 
 ```
-$ sudo groupadd docker
+# 建立 docker 组
+sudo groupadd docker
+
+# 将当前用户加入 docker 组
+sudo usermod -aG docker $USER
 ```
 
 ```
-$ docker run --rm hello-world
+# 测试 Docker 是否安装正确
+docker run --rm hello-world
 
 Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
