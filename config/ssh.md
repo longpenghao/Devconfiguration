@@ -1,5 +1,11 @@
 ## SSH设置
 ```
+# 参考链接：https://zhuanlan.zhihu.com/p/653975920
+# 给虚拟机安装ssh服务
+sudo apt install openssh-client openssh-server
+sudo /etc/init.d/ssh restart
+```
+```
 # 回车多次，进行无密码登录
 ssh-keygen -t rsa
 
