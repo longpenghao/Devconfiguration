@@ -1,6 +1,13 @@
 # vimrc
 
 ```
+# 一般只对当前用户修改vim配置，只需要在主目录下创建一个.vimrc文件即可
+vim ~/.vimrc
+
+# 将下列内容写入文件中
+```
+
+```
 set number
 set backspace=2
 set cursorline
