@@ -1,6 +1,7 @@
 ## SSH设置
 ```
-# 参考链接：https://zhuanlan.zhihu.com/p/653975920
+# 参考链接1：https://zhuanlan.zhihu.com/p/653975920
+# 参考链接2：https://blog.csdn.net/AirenMc/article/details/75735152
 # 给虚拟机安装ssh服务
 sudo apt-get install openssh-server
 sudo /etc/init.d/ssh restart
