@@ -1,4 +1,5 @@
 # Anacoda
+
 '''
 # linux中anaconda的配置文件
 # 保证“conda activate 虚拟环境名称”命令可以正常运行
