@@ -39,7 +39,6 @@ plugins=(git  zsh-autosuggestions zsh-syntax-highlighting )
 source ~/.zshrc
 ```
 
-
 ```
 function proxy_on() {
     export http_proxy=http://127.0.0.1:7890
@@ -52,24 +51,3 @@ function proxy_off(){
     echo -e "终端代理已关闭。"
 }
 ```
-
-```
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
-export PATH=/usr/local/cuda/bin:$PATH
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/usr/local/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/usr/local/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/usr/local/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/usr/local/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-```
-
