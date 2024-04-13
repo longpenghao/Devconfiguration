@@ -1,6 +1,7 @@
 # zshrc
 
 ```
+# 参考链接：https://zhuanlan.zhihu.com/p/441676276
 # 查看当前shell
 echo $SHELL
 # 查看当前可用的shell
