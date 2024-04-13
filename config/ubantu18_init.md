@@ -12,11 +12,6 @@ sudo apt-get install net-tools -y
 ```
 
 * 配置on-my-zsh
-    * `echo $SHELL`
-    * `cat /etc/shells`
-    * `sudo apt install zsh -y`
-    * `chsh -s /bin/zsh`
-    * `sudo reboot`
 * 配置.vimrc
 * 安装jdk8[link](https://blog.csdn.net/zbj18314469395/article/details/86064849)
     * `sudo apt-get install openjdk-8-jdk -y`
@@ -33,7 +28,6 @@ sudo apt-get install net-tools -y
     * `wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -`
     * `sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'`
     * `sudo apt update && sudo apt install google-chrome-stable`
-
 
 
 * 卸载java-8
