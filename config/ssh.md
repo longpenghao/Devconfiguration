@@ -2,8 +2,19 @@
 ```
 # 参考链接：https://zhuanlan.zhihu.com/p/653975920
 # 给虚拟机安装ssh服务
-sudo apt install openssh-client openssh-server
+sudo apt-get install openssh-server
 sudo /etc/init.d/ssh restart
+# ssh成功后会提示：[ ok ] Starting ssh (via systemctl): ssh.service.
+
+# 验证ssh是否开启
+ps -e|grep ssh
+# 有如下类似结果即为开启
+    826 ?        00:00:00 sshd
+   4633 ?        00:00:00 sshd
+   4668 ?        00:00:00 sshd
+
+# 可能需要安装
+sudo apt install openssh-client
 ```
 ```
 # 回车多次，进行无密码登录
