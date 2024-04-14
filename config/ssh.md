@@ -22,7 +22,7 @@ sudo apt install openssh-client
 ssh-keygen -t rsa
 
 # 使用“-f”制定保存密钥的文件名
-ssh-keygen -t rsa -f “文件名称”
+ssh-keygen -t rsa -f “ssh-key”
 ```
 ```
 # 在.ssh文件夹下创建config文件
@@ -59,13 +59,13 @@ vim id_rsa.pub
 
 ```
 # 将本地公钥id_rsa.pub文件复制到服务器
-scp C:/Users/hao/.ssh/id_rsa.pub s1:~/.ssh
+scp C:/Users/hao/.ssh/ssh-key.pub s1:~/.ssh
 ```
 
 ```
 # 进入到.ssh文件夹下，如果没有authorized_keys文件，创建该文件
 # 将服务器上的id_rsa.pub文件，复制到authorized_keys文件中：
-cat id_rsa.pub > authorized_keys
+cat ssh-key.pub > authorized_keys
 chmod 600 ~/.ssh/authorized_keys
 chmod 700 ~/.ssh
 ```
