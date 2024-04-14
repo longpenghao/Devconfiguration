@@ -12,6 +12,8 @@ git config --global http.proxy "socks5://127.0.0.1:7890"
 
 # 生成git公钥
 ssh-keygen -t rsa -C "3518563454@qq.com"
+
+# 将id_rsa.pub复制到GitHub账户中
 ```
 
 ## git提交规范
