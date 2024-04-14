@@ -25,7 +25,7 @@ export NO_PROXY="127.0.0.1,localhost"
 ```
 
 ```
-# 为该文件填加执行权限
+# 为该文件填加执行权限，将上述代理添加到默认设置中
 sudo chmod +x  /etc/profile.d/proxy.sh
 
 # 激活文件以开始使用代理设置，或者注销并重新登录
