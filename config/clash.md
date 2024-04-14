@@ -21,7 +21,7 @@ export HTTP_PROXY="http://192.168.1.101:7890/"
 export HTTPS_PROXY="http://192.168.1.101:7890/"
 export FTP_PROXY="http://192.168.1.101:7890/"
 export NO_PROXY="127.0.0.1,localhost"
-#将要从代理中排除的其他IP添加到NO_PROXY和no_proxy环境变量中
+# 将要从代理中排除的其他IP添加到NO_PROXY和no_proxy环境变量中
 ```
 
 ```
