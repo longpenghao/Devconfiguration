@@ -33,3 +33,19 @@ source /etc/profile.d/proxy.sh
 #查看环境变量进行确认是否生效
 env | grep -i proxy
 ```
+
+```
+# 参考链接：https://zhuanlan.zhihu.com/p/357875811
+# 代理修改，目前用不到了
+
+function proxy_on() {
+    export http_proxy=http://127.0.0.1:7890
+    export https_proxy=\$http_proxy
+    echo -e "终端代理已开启。"
+}
+
+function proxy_off(){
+    unset http_proxy https_proxy
+    echo -e "终端代理已关闭。"
+}
+```
