@@ -1,5 +1,12 @@
 # ubantu18 init
 
+```
+# ubuntu server安装
+# 参考链接1：https://www.cnblogs.com/yeyouqing/articles/17021253.html
+# 参考链接2：https://blog.csdn.net/u010080562/article/details/127708329
+# 参考链接3：https://www.osyunwei.com/archives/10727.html
+```
+
 ## 基础命令安装
 
 ```bash
