@@ -38,18 +38,3 @@ plugins=(git  zsh-autosuggestions zsh-syntax-highlighting )
 # 重新启动zsh
 source ~/.zshrc
 ```
-
-```
-# 参考链接：https://zhuanlan.zhihu.com/p/357875811
-
-function proxy_on() {
-    export http_proxy=http://127.0.0.1:7890
-    export https_proxy=\$http_proxy
-    echo -e "终端代理已开启。"
-}
-
-function proxy_off(){
-    unset http_proxy https_proxy
-    echo -e "终端代理已关闭。"
-}
-```
