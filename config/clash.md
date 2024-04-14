@@ -35,6 +35,20 @@ env | grep -i proxy
 ```
 
 ```
+# 配置git用户信息
+git config --global user.name "Hao Lonpeng"
+git config --global user.email "3518563454@qq.com"
+
+# 给git配置本地clash代理,注意修改ip地址
+git config --global http.proxy "socks5:///192.168.1.101:7890"
+
+# 生成git公钥
+ssh-keygen -t rsa -C "3518563454@qq.com"
+
+# 将id_rsa.pub复制到GitHub账户中
+```
+
+```
 # 参考链接：https://zhuanlan.zhihu.com/p/357875811
 # 代理修改，目前用不到了
 
