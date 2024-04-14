@@ -59,7 +59,7 @@ vim id_rsa.pub
 
 ```
 # 将本地公钥id_rsa.pub文件复制到服务器
-scp .ssh/id_rsa.pub 用户@IP地址:~/.ssh/
+scp .ssh/ssh-key.pub 用户@IP地址:~/.ssh/
 ```
 
 ```
