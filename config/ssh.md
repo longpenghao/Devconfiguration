@@ -16,6 +16,14 @@ ps -e|grep ssh
 
 # 可能需要安装
 sudo apt install openssh-client
+
+# 可能用到的修改ssh服务代码
+sudo apt-get install openssh-server 
+sudo ufw disable #关闭防火墙；或者将22端口开放
+sudo service sshd start
+
+systemctl enable ssh.service  # 开机自启
+service ssh restart
 ```
 ```
 # 回车多次，进行无密码登录
