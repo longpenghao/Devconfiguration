@@ -40,6 +40,8 @@ source ~/.zshrc
 ```
 
 ```
+# 参考链接：https://zhuanlan.zhihu.com/p/357875811
+
 function proxy_on() {
     export http_proxy=http://127.0.0.1:7890
     export https_proxy=\$http_proxy
