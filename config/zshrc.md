@@ -10,7 +10,7 @@ cat /etc/shells
 # 安装zsh，并将它替换为默认zsh
 sudo apt install zsh -y
 chsh -s /bin/zsh
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
 ```
