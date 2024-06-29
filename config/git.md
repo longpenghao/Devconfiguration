@@ -3,6 +3,8 @@
 ## git配置
 
 ```
+# 安装git
+sudo apt install git
 # 配置git用户信息
 git config --global user.name "Hao Lonpeng"
 git config --global user.email "3518563454@qq.com"
