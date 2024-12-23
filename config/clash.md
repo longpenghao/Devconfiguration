@@ -10,6 +10,16 @@ sudo vim  /etc/profile.d/proxy.sh
 # 其中ip地址替换为
 #   1 "http://电脑IP地址:7890/"
 #   2 "http://127.0.0.1:7890/"
+
+# git查看代理
+# git config --global --get http.proxy
+# git config --global --get https.proxy
+# git配置代理
+# git config --global https.proxy http://127.0.0.1:7890
+# git config --global https.proxy https://127.0.0.1:7890
+# git关闭代理
+# git config --global --unset http.proxy
+# git config --global --unset https.proxy
 ```
 
 ```
