@@ -21,6 +21,13 @@ sudo vim  /etc/profile.d/proxy.sh
 # git config --global --unset http.proxy
 # git config --global --unset https.proxy
 ```
+```
+# powershell测试代理是否生效
+# HTTP(s)测试：
+curl -x http://127.0.0.1:7890 https://www.google.com
+# SOCKS测试：
+curl --socks5 127.0.0.1:7890 https://www.google.com
+```
 
 ```
 # set proxy config via profie.d - should apply for all users
